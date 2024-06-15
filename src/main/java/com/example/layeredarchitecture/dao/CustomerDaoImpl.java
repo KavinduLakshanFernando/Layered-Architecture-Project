@@ -67,4 +67,15 @@ public class CustomerDaoImpl implements CustomerDao{
         }
     }
 
+    /*public String CName(String name) throws SQLException, ClassNotFoundException {
+        Connection connection = DBConnection.getDbConnection().getConnection();
+
+        PreparedStatement pstm = connection.prepareStatement("SELECT * FROM Customer WHERE id=?");
+        pstm.setString(1, name + "");
+        ResultSet rst = pstm.executeQuery();
+        rst.next();
+        CustomerDTO customerDTO = new CustomerDTO(name + "", rst.getString("name"), rst.getString("address"));
+        return name;
+    }*/
+
 }
